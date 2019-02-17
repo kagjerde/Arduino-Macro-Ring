@@ -12,7 +12,7 @@ The ring can be configured by a rotary switch controlled from a Arduino Nano mic
 - Select how many LED's that will be ON, from zero to all
 - Rotate the selected LED's around the circle
 
-By selecting between the different modes, it is possible to get different colours dimmed and the object at the centre lit from different angles.
+By selecting between the different modes, it is possible to get different colours dimmed and the object at the centre lit from different angles. The mode selection is shown on a 7-segment display.
 
 ## Hardware
 
@@ -24,7 +24,7 @@ The sotware is written in C and relies on the HCWS2812 library written by Andrew
 
 ## Cirquit diagram
 
-
+<img align="center" width="700" src="Cirquit_diagram.png">
 
 ## Licence
 
