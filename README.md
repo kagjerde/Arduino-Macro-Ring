@@ -22,6 +22,10 @@ The project contains 3D model for an small enclosure for the electronics, and an
 
 The sotware is written in C and relies on the HCWS2812 library written by Andrew Davies.
 
+## Cirquit diagram
+
+
+
 ## Licence
 
 2019 MIT
