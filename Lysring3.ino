@@ -3,11 +3,11 @@
   #include <avr/power.h>
 #endif
 
-#define PIN 8
+#define PIN 8  //for LED strip
 
 #define NUM_LEDS 24
 
-#define BRIGHTNESS 50
+#define BRIGHTNESS 255
 
 // Rotary encoder declarations
 static int pinA = 2;              // Our first hardware interrupt pin is digital pin 2
@@ -63,9 +63,7 @@ byte neopix_gamma[] = {
   177,180,182,184,186,189,191,193,196,198,200,203,205,208,210,213,
   215,218,220,223,225,228,231,233,236,239,241,244,247,249,252,255 };
 
-//byte 7segment[] = {0x7E, 0x30, 0x6D, 0x79, 0x33, 0x5B, 0x5F, 0x70, 0x7F, 0x7B};
-
-int num_array[10][7] = {  { 1,1,1,1,1,1,0 },    // 0
+int num_array[10][7] = {  { 1,1,1,1,1,1,0 },    // 0 //connected as abcdefg
                           { 0,1,1,0,0,0,0 },    // 1
                           { 1,1,0,1,1,0,1 },    // 2
                           { 1,1,1,1,0,0,1 },    // 3
@@ -91,7 +89,7 @@ void setup() {
   
   Num_Write(0);
   
-   //Rotary encoder section of setup
+  //Rotary encoder section of setup
   pinMode(pinA, INPUT_PULLUP); // set pinA as an input, pulled HIGH to the logic voltage (5V or 3.3V for most cases)
   pinMode(pinB, INPUT_PULLUP); // set pinB as an input, pulled HIGH to the logic voltage (5V or 3.3V for most cases)
   attachInterrupt(0,PinA,RISING); // set an interrupt on PinA, looking for a rising edge signal and executing the "PinA" Interrupt Service Routine (below)
