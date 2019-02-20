@@ -1,7 +1,6 @@
 # Arduino-Macro-Ring
 
 This project is for a RGB LED ring for macro photography or microscopes, to reduce shadows and reflections in the image.
-It uses a WS2812B Module Strip from [Aliexpress](https://www.aliexpress.com/item/WS2812B-Module-Strip-24-Bits-24-X-WS2812-5050-RGB-LED-Ring-Lamp-Light-with-Integrated/32842513885.html?spm=a2g0s.9042311.0.0.27424c4dtHlEIW)
 
 ![](IMG_4999.JPG)
 
@@ -22,11 +21,13 @@ Modes:
 4. Two opposite LED's
 5. Four opposite LED's
 
-The LED strip is controlled using a Arduino Nano microcontroller. The mode selection is shown on a 7-segment display.
 
 ## Hardware
 
-The project contains 3D model for a small enclosure for the electronics, and an arm intended for mounting on a microscope.
+- The project contains 3D model for a small enclosure for the electronics, and an arm intended for mounting on a microscope.
+- It uses a WS2812B Module Strip from [Aliexpress](https://www.aliexpress.com/item/WS2812B-Module-Strip-24-Bits-24-X-WS2812-5050-RGB-LED-Ring-Lamp-Light-with-Integrated/32842513885.html?spm=a2g0s.9042311.0.0.27424c4dtHlEIW)
+- The LED strip is controlled using a Arduino Nano microcontroller. 
+- The mode selection is shown on a 7-segment display.
 
 ## Software
 
